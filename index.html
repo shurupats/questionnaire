@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/Normalize.css" rel="stylesheet" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <title>Questionnaire</title>
+  </head>
+  <body class="container">
+    <h3 class="title">Расскажи о своём котике c:</h3>
+    <form class="container-form">
+      <div class="container-form-cat">
+        <div class="container-form-cat-name">
+          <label class="label" for="cat_name">Как его зовут?</label>
+          <br /><input
+            class="input"
+            type="text"
+            id="cat_name"
+            placeholder="Имя котика"
+            required
+          />
+        </div>
+        <div  class="container-form-cat-age">
+            <label class="label">Возраст котика: </label>
+            <input class="input" type="number" placeholder="0" value="0" min="0" max="100">
+        </div>
+        <div class="container-form-cat-breed">
+          <label class="label">Какая у него порода?</label>
+          <select>
+            <option class="normal_text" value="1">Египетский мау</option>
+            <option value="2">Мейн-кун</option>
+            <option value="3">Оцикет</option>
+            <option value="4">Манчкин</option>
+            <option value="5" selected>Беспородный</option>
+          </select>
+        </div>
+        <div class="container-form-cat-food">
+          <label>Чем питается?</label>
+          <br /><input type="checkbox" id="dry_food" /> Сухой корм <br /><input
+            type="checkbox"
+            id="wet_food"
+          />
+          Влажный корм <br /><input type="checkbox" id="normal_food" />
+          Натуральный корм
+        </div>
+        <div class="container-form-cat-sex">
+          <label>Пол котика</label>
+          <br /><input type="radio" id="male" /> Котик <br /><input
+            type="radio"
+            id="female"
+          />
+          Кошечка
+        </div>
+        <div class="container-form-cat-photo">
+          <label class="label" for="photo">Загрузи котопортрет</label>
+          <br /><input class="normal_text" type="file" id="photo" />
+        </div>
+      </div>
+      <div class="container-form-human">
+        <label class="label">Немного о тебе</label>
+        <input class="input" type="text" id="name" placeholder="Твоё имя" required />
+        <input class="input" type="text" id="phone" placeholder="Телефон" required/>
+        <textarea
+          class="input"
+          rows="5"
+          placeholder="Место для комментария"
+        ></textarea>
+        <button class="button">Сохранить</button>
+      </div>
+    </form>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
